@@ -68,7 +68,25 @@ npm config get registry
 ```
 若输出为上一步设置的源的话，则设置成功
 
-## (可选)使用PNPM代替NPM
+## (可选)安装YARN包管理器
+1. 安装
+```bash
+npm install -g yarn
+```
+
+2. 换源
+::: code-tabs
+@tab 阿里源
+```bash
+yarn config set registry https://registry.npmmirror.com
+```
+@tab 腾讯源
+```bash
+yarn config set registry http://mirrors.cloud.tencent.com/npm/
+```
+:::
+
+## (可选)安装PNPM包管理器
 1. 安装
 ```bash
 npm install -g pnpm
@@ -86,20 +104,13 @@ pnpm config set registry http://mirrors.cloud.tencent.com/npm/
 ```
 :::
 
-## (可选)使用YARN代替NPM
+## (不推荐)安装CNPM包管理器
+> [!caution]
+> 使用cnpm安装依赖时，既不生成lock文件，也不会根据lock文件安装依赖，只遵循```package.json```安装依赖。
+> 在多人共同协作维护的项目中，lock文件是必不可少的，是为了确保不同开发者安装的包及其依赖保持一致，同时也是降低不同版本 npm 包给项目稳定性带来的影响。尤其是一些不遵循语义化版本控制的第三方 npm 包，就很容易被坑到。故在大部分情况下，都不建议使用cnpm，可使用换源的npm或yarn或pnpm代替。
+
 1. 安装
 ```bash
-npm install -g yarn
+npm install -g cnpm
 ```
-
-2. 换源
-::: code-tabs
-@tab 阿里源
-```bash
-yarn config set registry https://registry.npmmirror.com
-```
-@tab 腾讯源
-```bash
-yarn config set registry http://mirrors.cloud.tencent.com/npm/
-```
-:::
+cnpm默认使用国内阿里源，一般情况下没有换源的必要。
