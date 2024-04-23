@@ -27,6 +27,7 @@ export default hopeTheme({
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024224091号</a>',
   displayFooter: true,
   copyright: '',
+  contributors: false,
 
   // 加密配置
   encrypt: {
