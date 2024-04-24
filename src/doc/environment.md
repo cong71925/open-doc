@@ -31,7 +31,7 @@ nvm install "14.21.3"
 ```
 7. 列出安装的 Node 版本：
 ```bash
-nvm bash
+nvm list
 ```
 现在应会看到刚安装的版本。
 
