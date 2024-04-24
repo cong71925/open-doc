@@ -10,6 +10,8 @@ category:
 # 一个页面可以有多个标签
 ---
 
+工欲善其事，必先利其器。
+
 ## Node环境安装
 安装Node.js时建议使用版本管理器，因为版本变更速度非常快。 你可能需要根据所使用的不同项目的需要在多个 Node.js 版本之间进行切换。 Node 版本管理器（通常称为 nvm）是安装多个版本的 Node.js 的最常见方法，但仅适用于 Mac/Linux，在 Windows 上不受支持。 相反，我们建议安装 nvm-windows，然后使用它来安装 Node.js 和 Node Package Manager (npm)。
 > [!warning]
