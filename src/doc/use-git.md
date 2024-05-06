@@ -120,3 +120,58 @@ git push
 当然，如果您觉得使用Git命令过于复杂，也可以使用Git的的一些GUI工具来辅助您使用Git。
 
 Vs code内置了一个Git的可视化插件，推荐。
+
+## （进阶）分支管理
+Git的分支功能在多人协同开发中尤为重要，可以让你在提交代码时不必担心互相影响。
+
+包含分支的Git的工作流，可以简单理解为这样：
+
+```flow
+st=>start: 开始
+e=>end: 结束
+branch=>operation: 创建分支
+checkoutDev=>operation: 切换分支
+commit=>operation: 提交改动
+checkoutMain=>operation: 切回主分支
+merge=>operation: 合并
+
+st(right)->branch(right)->checkoutDev(right)->commit(right)->checkoutMain(right)->merge(right)->e
+```
+对应的Git分支图：
+
+```git-graph
+commit id: "初始化"
+commit
+branch dev
+checkout dev
+commit id: "改动1"
+commit id: "改动2"
+checkout main
+merge dev
+commit
+```
+可以看到，当我们在新创建的分支上提交代码时，是不会影响到主分支的。而我们在自己的分支上的改动，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既不怕丢失每日进度，又不会影响别人工作。
+
+- 查看本地分支：
+```bash
+git branch
+```
+- 创建分支：
+```bash
+git branch '分支名称'
+```
+
+- 切换分支：
+```bash
+git checkout '分支名称'
+```
+
+- 合并分支：
+```bash
+git merge '分支名称'
+```
+
+- 删除分支：
+```bash
+git branch -d '分支名称'
+```
