@@ -16,7 +16,19 @@ Git是目前世界上最常用的分布式版本控制系统。
 
 Git虽然是分布式的，但是在多人协作时，常常还是需要一台远程主机充当“中心”的作用，用来同步每个人对代码的改动。这里我们使用的是Gitee来充当这个远程主机。
 
-而Git的工作流，可以简单理解为这样：拉取 -> 改动 -> 暂存 -> 提交 -> 推送
+而Git的工作流，可以简单理解为这样：
+
+```flow
+st=>start: 开始
+e=>end: 结束
+pull=>operation: 拉取:>#从gitee中拉取仓库
+change=>operation: 改动
+add=>operation: 暂存:>#将改动移至暂存区
+commit=>operation: 提交:>#代码提交
+push=>operation: 推送:>#推送提交到远程仓库
+
+st(right)->pull(right)->change(right)->add(right)->commit(right)->push(right)->e
+```
 
 ## Git安装
 
