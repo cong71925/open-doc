@@ -26,7 +26,6 @@ export default hopeTheme({
 
   // // 侧边栏
   // sidebar,
-
   // 页脚
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024224091号</a>',
   displayFooter: true,
@@ -121,7 +120,7 @@ export default hopeTheme({
       // mathjax: true,
 
       // 在启用之前安装 mermaid
-      // mermaid: true,
+      mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],
