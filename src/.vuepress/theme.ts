@@ -2,14 +2,18 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://doc.congvps.fun",
 
   author: {
     name: "狭雾",
     url: "https://congvps.fun",
   },
-
-  iconAssets: "fontawesome-with-brands",
+  iconPrefix: 'fas fa-',
+  iconAssets: [
+    'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.2/js/solid.min.js',
+    'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.2/js/brands.min.js',
+    'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js',
+  ],
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
