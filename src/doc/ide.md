@@ -64,7 +64,6 @@ HBuilder X 是绿色免安装的，下载解压后即可使用。
 
 1. 打开[最新版本发布地址](https://dcloud.io/hbuilderx.html)。
 2. 下载最新版本的 Download for Windows 文件。
-3. 下载完成后，打开 zip 文件，然后打开 nvm-setup.exe 文件。
-4. 将下载的 zip 文件里的 HBuilderX 目录解压到要安装 HBuilder 的目录。
-5. （可选）打开HBuilderX 目录，右键点击 HBuilderX.exe ，在发送到选项卡中点击桌面快捷方式。
+3. 将下载的 zip 文件里的 HBuilderX 目录解压到要安装 HBuilder 的目录。
+4. （可选）打开HBuilderX 目录，右键点击 HBuilderX.exe ，在发送到选项卡中点击桌面快捷方式。
 
