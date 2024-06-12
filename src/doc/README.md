@@ -1,7 +1,7 @@
 ---
 title: 前端开发指南
 icon: book
-index: true
+index: false
 ---
 
 工欲善其事，必先利其器。

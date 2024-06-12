@@ -17,7 +17,7 @@ export default hopeTheme({
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://gitee.com/cong71925/open-doc",
 
   docsDir: "src",
 
@@ -34,12 +34,10 @@ export default hopeTheme({
 
   // 加密配置
   encrypt: {
-    config: {
-      "/doc/account.html": ["Aa123456!"],
-    },
+    config: {},
   },
 
-  editLink: false,
+  editLink: true,
   // 多语言配置
   metaLocales: {
     // editLink: "在 GitHub 上编辑此页",
