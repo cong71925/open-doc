@@ -31,6 +31,8 @@ server {
   # 项目运行的端口号，注意不能有重复或者被占用
   listen       9000;
   server_name  localhost;
+  # 不使用缓存
+  add_header Cache-Control no-store;
   location / {
     # 项目的根目录地址
     root   D:/workspace/project;
@@ -80,6 +82,8 @@ http {
     server {
         listen       9000;
         server_name  localhost;
+        # 不使用缓存
+        add_header Cache-Control no-store;
         location / {
             root   D:/workspace/project;
             index  index.html index.htm;
