@@ -11,7 +11,35 @@ category:
 ---
 
 ## Webpack 和 Vite
-待更新...
+基于现代化前端构建工具（如webpack，vite）构建的项目，基本都是要先用 Nodejs 启动开发服务器后才能开始调试的。
+
+一般而言，经由 Vue-cli 创建的项目或者拉取的项目模板的根目录下都会有`package.json`文件，其中的`"scripts"`属性通常包含启动开发服务器的脚本：
+
+```json
+{
+  "name": "vue-antd-jeecg",
+  "version": "3.4.3",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build:test": "vue-cli-service build --mode test",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  }
+}
+```
+以上述文件为例，该项目的启动脚本应为`"scripts"`属性中的`"serve"`，在 PowerShell 或终端中输入如下命令：
+::: code-tabs
+@tab 执行scripts中定义的serve脚本
+```bash
+npm run serve
+```
+@tab 使用npx直接执行脚本
+```bash
+npx vue-cli-service serve
+```
+:::
+
+等待脚本执行完毕，PowerShell 或终端中显示项目运行地址后，开发服务器就算启动成功了。
 
 ## Uni-App
 Uni-App 是一套跨平台前端开发框架，可以实现编写一套代码，到处运行。但是其运行效果在各个平台上可能会有差异。
