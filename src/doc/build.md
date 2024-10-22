@@ -10,7 +10,44 @@ category:
 # 一个页面可以有多个标签
 ---
 ## Webpack 和 Vite
-待更新...
+同样的，在项目的根目录下的`package.json`文件，其中的`"scripts"`属性一般也会包含编译打包的的脚本：
+```json
+{
+  "name": "vue-antd-jeecg",
+  "version": "3.4.3",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build:test": "vue-cli-service build --mode test",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  }
+}
+```
+以上述文件为例，该项目的启动脚本应为`"scripts"`属性中的`"serve"`，在 PowerShell 或终端中输入如下命令：
+::: code-tabs
+@tab 执行scripts中定义的serve脚本
+```bash
+npm run build
+```
+@tab 使用npx直接执行脚本
+```bash
+npx vue-cli-service build
+```
+:::
+等待脚本执行完毕，PowerShell 或终端中输出如下与下方类似的信息：
+```bash 
+vite v5.3.1 building for production...
+✓ 41 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/Home-Bx9V9zN2.css     0.48 kB │ gzip:  0.31 kB
+dist/assets/index-BPvgi06w.css    0.92 kB │ gzip:  0.50 kB
+dist/assets/Player-C7xff9iQ.js    0.22 kB │ gzip:  0.21 kB
+dist/assets/Home-wRyz_nXv.js      0.86 kB │ gzip:  0.45 kB
+dist/assets/index-Dt8aTw03.js   202.22 kB │ gzip: 66.13 kB
+✓ built in 947ms
+```
+至此，打包就完成了，由上方的输出信息可以看出，打包生成的文件路径都在`dist`目录下，将`dist`目录下的文件放到服务器相应位置即可。
 ## Uni-App
 Uni-App作为一款跨平台的框架，对应的每个平台都要单独打包。
 ### 打包至 Web 环境
