@@ -9,4 +9,5 @@ category:
   - 开发文档
   - 地图
 # 一个页面可以有多个标签
+index: false
 ---
