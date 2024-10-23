@@ -4,6 +4,7 @@ export default navbar([
   "/",
   "/doc/",
   "/guide/",
+  "/map/",
   {
     text: "V2 文档",
     icon: "book",
