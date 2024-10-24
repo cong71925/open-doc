@@ -23,12 +23,12 @@ category:
     const axios = useAxios()
     /** axios选项 */
     axios({
-    url: '/sys/sysRoleTree/queryUserTreeTagList',
-    method: 'get',
-    params: {
-        code: 'mapSystem',
-        type: '1'
-        }
+        url: '/sys/sysRoleTree/queryUserTreeTagList',
+        method: 'get',
+        params: {
+                code: 'mapSystem',
+                type: '1'
+            }
     }).then((res) => {
 
     }).catch((err) => {
