@@ -26,9 +26,9 @@ category:
         url: '/sys/sysRoleTree/queryUserTreeTagList',
         method: 'get',
         params: {
-                code: 'mapSystem',
-                type: '1'
-            }
+            code: 'mapSystem',
+            type: '1'
+        }
     }).then((res) => {
 
     }).catch((err) => {
