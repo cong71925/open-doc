@@ -49,7 +49,7 @@ category:
     }
     /** 将类型作为泛型参数 */
     export type DemoRecord = Record<DemoItem>
-
+    /** 定义DemoList继承自BaseList */
     export default class DemoList extends BaseListHook<DemoItem> {
         constructor(options?: BaseListHookOptions<DemoItem>) {
             /** 定义crud的接口地址 */

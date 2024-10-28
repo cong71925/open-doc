@@ -38,7 +38,9 @@ category:
     const color = '#FFFFFF'
     const moveRoute = new MoveRoute(map, Cesium, points, color)
     ```
-## drawStartPoint()
+## 实例方法
+
+### drawStartPoint()
 绘制起点图标。
 - 类型
     ```ts
@@ -60,7 +62,7 @@ category:
     const moveRoute = new MoveRoute(map, Cesium, points, color)
     moveRoute.drawStartPoint()
     ```
-## drawEndPoint()
+### drawEndPoint()
 绘制终点图标。
 - 类型
     ```ts
@@ -83,7 +85,7 @@ category:
     moveRoute.drawEndPoint()
     ```
 
-## drawRoute()
+### drawRoute()
 绘制轨迹线。
 - 类型
     ```ts
@@ -117,7 +119,7 @@ category:
     moveRoute.drawEndPoint()
     moveRoute.drawRoute()
     ```    
-## pushPoint()
+### pushPoint()
 在轨迹线的末尾新增一段。若当前轨迹线包含终点图标时，会同时更新终点的坐标位置。
 - 类型
     ```ts
@@ -157,7 +159,7 @@ category:
         moveRoute.pushPoint([113.421, 52])
     })
     ```    
-## destroyStartPoint()
+### destroyStartPoint()
 移除起点图标。
 - 类型
     ```ts
@@ -178,7 +180,7 @@ category:
         moveRoute.destroyStartPoint()
     }, 2000)
     ```
-## destroyEndPoint()
+### destroyEndPoint()
 移除终点图标。
 - 类型
     ```ts
@@ -199,7 +201,7 @@ category:
         moveRoute.destroyEndPoint()
     }, 2000)
     ```
-## destroyRoute()
+### destroyRoute()
 移除轨迹线。
 - 类型
     ```ts
@@ -234,7 +236,7 @@ category:
         moveRoute.destroyRoute()
     })
     ```
-## destroy()
+### destroy()
 销毁轨迹线实例。
 - 类型
     ```ts
